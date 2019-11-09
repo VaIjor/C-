@@ -22,8 +22,8 @@ using namespace std;
 class Grid{ // Grid class
   public:
 
-    int Row;
-    int Coloms;
+    int Row = 6;
+    int Coloms = 20;
 
 
 };
@@ -37,8 +37,8 @@ int main()
 
     Grid Obj;
 
-    Obj.Row = 6;
-    Obj.Coloms = 20;
+    Obj.Row;
+    Obj.Coloms;
 
 
 

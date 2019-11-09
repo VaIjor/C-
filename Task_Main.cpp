@@ -34,10 +34,20 @@ int main()
 {
 
 wheelGroup wheelGroupObj;
+string Tranfer;
+string Tranfer2;
+
 string out;
+string out2;
+
 int R = 0;
-//wheelGroupObj.wheelGroupchi[5];
-//string wheelGroupchi;
+
+string chigroup[5];
+string psigroup[5];
+
+
+std::string chi_encr;
+
 
 
 
@@ -89,40 +99,73 @@ infile.close();
 
 
 
-//  for(int i=1; i<5;){
-//    string testval;
-//    testval= wheelGroupchi[i];
-//   psikey[i] = testval.at(1);
-//    cout << psikey[i] << '\n';
-//    i++;
+//std::cout << chi1 << '\n';
+//std::cout << chi2 << '\n';
+//std::cout << chi3 << '\n';
+//std::cout << chi4 << '\n';
+//std::cout << chi5 << '\n';
+std::cout << psi1 << '\n';
+std::cout << psi2 << '\n';
+std::cout << psi3 << '\n';
+std::cout << psi4 << '\n';
+std::cout << psi5 << '\n';
 
-//}
-std::cout << chi1 << '\n';
-std::cout << chi2 << '\n';
-std::cout << chi3 << '\n';
-std::cout << chi4 << '\n';
-std::cout << chi5 << '\n';
 
-string arrr[5];
-string Tranfer;
+
 
 for(int i=0; i<5; ){
-Tranfer = wheelGroupchi[i];
+  Tranfer = wheelGroupchi[i];
 
-out = Tranfer.substr(R,1);
-cout << out <<" ";
-arrr[i]= out;
-i++;
+  out = Tranfer.substr(R,1);
+  //cout << out <<" ";
+  chigroup[i]= out;
+  i++;
 }
 //std::cout << test << '\n';
 //for(int i=0; i<5; ){
 //std::cout << arrr[i] << '\n';
 //i++;
 //}
+for(int i=0; i<5; ){
+  Tranfer2 = wheelGrouppsi[i];
+
+  out2 = Tranfer2.substr(R,1);
+  //cout << out <<" ";
+  psigroup[i]= out2;
+  i++;
+}
+
+for(int i=0; i<5; ){
+  std::cout << psigroup[i] << '\n';
+  i++;
+}
 
 
-bitset<5> bset1(25);
-for()
+
+
+
+
+
+
+
+
+
+for(int j=0; j<5;){
+  string am;
+  am = chigroup[j];
+
+
+  chi_encr += am;
+  j++;
+}
+//std::cout << chi_encr << '\n';
+
+
+bitset<5> letter(25);
+//std::cout << letter << '\n';
+bitset<5> chi_pinset(chi_encr);
+
+//std::cout << chi_pinset << '\n';
 
 
 
